@@ -1,4 +1,4 @@
-from flask import Blueprint, jsonify, request
+from flask import Blueprint, request
 from ResponseObject import ResponseObject
 import decorators
 
