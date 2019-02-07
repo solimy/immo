@@ -1,1 +1,1 @@
-find . -regex "./.*\.py" -type f -exec python3.7 {} \;
+find . -regex "./.*\.py" -type f -exec python {} \;
