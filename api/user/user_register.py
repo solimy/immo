@@ -15,7 +15,7 @@ register = Blueprint('user_register', __name__)
 def handle():
     if request.method == "POST":
         status = api.SUCCESS
-        response = "response"       
+        response = None       
         try:
             login = request.json[api.LOGIN]
             password = request.json[api.PASSWORD]

@@ -6,7 +6,6 @@ import api
 import db
 from passlib.hash import sha256_crypt
 import sqlite3 as sql
-import uuid
 
 auth = Blueprint('user_auth', __name__)
 
@@ -17,7 +16,7 @@ auth = Blueprint('user_auth', __name__)
 def handle():
     if request.method == "POST":
         status = api.SUCCESS
-        response = "response"       
+        response = None       
         try:
             login = request.json[api.LOGIN]
             password = request.json[api.PASSWORD]
