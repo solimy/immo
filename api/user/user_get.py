@@ -5,9 +5,9 @@ import decorators
 get = Blueprint('user_get', __name__)
 
 @get.route("/user/get", methods = ["GET", "POST"])
-@decorators.test
+@decorators.debug_request_display
 def handle():
     if request.method == "POST":
-        return ResponseObject(500, {})
+        return ResponseObject(400, "get").json()
     if request.method == "GET":
         return ResponseObject(400, "get").json()
