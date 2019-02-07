@@ -6,6 +6,7 @@ disconnect = Blueprint('user_disconnect', __name__)
 
 @disconnect.route("/user/disconnect", methods = ["GET", "POST"])
 @decorators.debug_request_display
+@decorators.required_param_login
 def handle():
     if request.method == "POST":
         return ResponseObject(400, "disconnect").json()
