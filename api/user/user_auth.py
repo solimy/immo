@@ -1,11 +1,13 @@
 from flask import Blueprint, jsonify, request
 from ResponseObject import ResponseObject
+import decorators
 
-immo_details = Blueprint('immo_details', __name__)
+auth = Blueprint('user_auth', __name__)
 
-@immo_details.route("/immo/details", methods = ["GET", "POST"])
+@auth.route("/user/auth", methods = ["GET", "POST"])
+@decorators.test
 def handle():
     if request.method == "POST":
         return ResponseObject(500, {})
     if request.method == "GET":
-        return ResponseObject(400, "immo_details").json()
+        return ResponseObject(400, "auth").json()

@@ -1,9 +1,9 @@
 from flask import Blueprint, jsonify, request
 from ResponseObject import ResponseObject
 
-disconnect = Blueprint('disconnect', __name__)
+disconnect = Blueprint('user_disconnect', __name__)
 
-@disconnect.route("/disconnect", methods = ["GET", "POST"])
+@disconnect.route("/user/disconnect", methods = ["GET", "POST"])
 def handle():
     if request.method == "POST":
         return ResponseObject(500, {})
