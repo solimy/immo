@@ -10,3 +10,6 @@ STATUS = "status"
 LOGIN = "login"
 PASSWORD = "password"
 TOKEN = "token"
+
+USER_ALREADY_EXIST = "user already exists"
+BAD_CREDENTIALS = "bad credentials"
