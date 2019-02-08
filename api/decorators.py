@@ -4,3 +4,6 @@ from debug_request_display import debug_request_display
 from required_param_login import required_param_login
 from required_param_password import required_param_password
 from required_param_token import required_param_token
+from required_param_last_name import required_param_last_name
+from required_param_first_name import required_param_first_name
+from required_param_birth_date import required_param_birth_date
