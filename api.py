@@ -17,5 +17,6 @@ TITLE = "title"
 NB_ROOMS = "nb_rooms"
 
 USER_ALREADY_EXIST = "user already exists"
+IMMO_ALREADY_EXIST = "immo already exists"
 BAD_CREDENTIALS = "bad credentials"
 

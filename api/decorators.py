@@ -7,3 +7,5 @@ from required_param_token import required_param_token
 from required_param_last_name import required_param_last_name
 from required_param_first_name import required_param_first_name
 from required_param_birth_date import required_param_birth_date
+from required_param_title import required_param_title
+from required_param_nb_rooms import required_param_nb_rooms
