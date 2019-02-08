@@ -4,7 +4,6 @@ import decorators
 import secrets
 import api
 import db
-from passlib.hash import sha256_crypt
 import sqlite3 as sql
 
 disconnect = Blueprint('user_disconnect', __name__)
@@ -22,7 +21,6 @@ def handle():
                 cur = con.cursor()
                 cur.execute("UPDATE "+db.USERS+" SET "+db.TOKEN+" = ? WHERE "+db.TOKEN+" =?", ("",token,))
                 con.commit()
-                print("ho ho ho")
         except Exception as e:
             print(e)
             status = api.ERROR
