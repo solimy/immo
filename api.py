@@ -18,5 +18,7 @@ NB_ROOMS = "nb_rooms"
 
 USER_ALREADY_EXIST = "user already exists"
 IMMO_ALREADY_EXIST = "immo already exists"
+IMMO_DONT_EXIST = "immo does not exist"
+NOT_IMMO_OWNER = "you do not own this immo"
 BAD_CREDENTIALS = "bad credentials"
 

@@ -30,6 +30,7 @@ def handle():
                 cur.execute("SELECT "+db.LOGIN+" FROM "+db.USERS+" WHERE "+db.TOKEN+"=?", (token,))
                 login = cur.fetchone()[0]
                 cur.execute("INSERT INTO "+db.IMMOS+" ("+db.LOGIN+", "+db.TITLE+", "+db.NB_ROOMS+") VALUES (?, ?, ?)", (login, request.json[api.TITLE], request.json[api.NB_ROOMS]))
+                con.commit()
         except Exception as e:
             print(e)
             status = api.ERROR
