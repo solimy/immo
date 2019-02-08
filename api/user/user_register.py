@@ -25,6 +25,7 @@ def handle():
                 if not cur.fetchone() is None:
                     status = api.ERROR
                     response = api.USER_ALREADY_EXIST
+                    return
                 cur.execute("INSERT INTO "+db.USERS+"("+db.LOGIN+","+db.PASSWORD_HASH+") VALUES(?, ?)", (login, sha256_crypt.encrypt(password)))
                 con.commit()
 
