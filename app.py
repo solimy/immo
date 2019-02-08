@@ -14,7 +14,6 @@ app.register_blueprint(api.immo.add, url_prefix="")
 app.register_blueprint(api.immo.list, url_prefix="")
 app.register_blueprint(api.immo.get, url_prefix="")
 app.register_blueprint(api.immo.edit, url_prefix="")
-app.register_blueprint(api.immo.remove, url_prefix="")
 
 if __name__ == "__main__":
     app.run()

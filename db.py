@@ -1,6 +1,7 @@
 DB = "immo_database.db"
 USERS = "users"
 IMMOS = "immos"
+IMMOS_OLD = "immos_old"
 LOGIN = "login" 
 PASSWORD_HASH = "password_hash" 
 TOKEN = "token" 
