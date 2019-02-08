@@ -1,7 +1,6 @@
 from flask import Blueprint, request
 from ResponseObject import ResponseObject
 import decorators
-import secrets
 import api
 import db
 import sqlite3 as sql
